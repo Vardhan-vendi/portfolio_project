@@ -1,0 +1,129 @@
+/* text : "Tangerine", cursive */
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap");
+
+/* name  :"Fredericka the Great", serif */
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Fredericka+the+Great&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap");
+
+/*   "Fredericka the Great", serif*/
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Fredericka+the+Great&family=Libertinus+Keyboard&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap");
+
+.Home-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.details {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.greeting {
+  flex: 1;
+  font-family: "Tangerine", cursive;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.greeting p {
+  font-size: 3em;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+.greeting span {
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(242, 242, 242);
+  font-weight: 800;
+  text-align: center;
+  font-family: "Libertinus Keyboard", system-ui;
+}
+.name {
+  font-family: "Fredericka the Great", serif;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.name p {
+  font-family: "Tangerine", cursive;
+  font-size: 4em;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.name span {
+  font-family: "Fredericka the Great", serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(255, 0, 0);
+  text-align: end;
+  font-size: 3em;
+}
+
+/* right part */
+.user-image {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  margin-top: 2em;
+  margin-left: -4em;
+  justify-content: center;
+}
+.image img {
+  width: 280px;
+  height: 320px;
+  border-radius: 50%;
+  
+}
+.other-detaiils {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding-top: 2em;
+  line-height: 3em;
+  z-index: 3;
+}
+.other-detaiils a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+
+}
+
+.link {
+  display: flex;
+  align-items: center !important;
+ 
+  width: 60%;
+  font-size: 0.8em !important;
+  z-index: 3;
+}
+.link a {
+  z-index: 3;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 5px rgb(234, 0, 255), 0px 0px 3px rgb(255, 0, 43);
+}
+.link:hover a {
+  color: black;
+  text-shadow: none;
+}
+.link img {
+  border-radius: 50%;
+  width: 1.8em;
+  height: 1.8em;
+}
+
+
+#github img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

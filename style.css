@@ -1,0 +1,159 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+/*icons   :"Croissant One", serif */
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+/* name  :"Fredericka the Great", serif */
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Fredericka+the+Great&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  outline: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.portfolio-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+.portfolio-container::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  background: url(./assets/5.jpg) no-repeat;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+ 
+  width: 100%;
+  height: 100%;
+}
+.topbar {
+  width: 100%;
+  height: 7%;
+  max-height: 10%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  inset: 0 0 0 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.logo img {
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+}
+
+.user-services {
+  color: white;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 50px;
+}
+#signup,
+#login {
+  width: 5em;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 1.4em;
+  z-index: 5;
+}
+
+#signup:hover,
+#login:hover {
+  color: black;
+}
+
+.main-container {
+  width: 100%;
+  /* border: 1px solid red; */
+  height: 93%;
+  position: absolute;
+  top: 7%;
+  color: white;
+}
+
+.footer {
+  z-index: 5;
+ 
+  position: absolute !important;
+  bottom: 1.2em;
+  width: fit-content;
+  max-width: 100%;
+  height: 10%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+
+  margin-left: 50%;
+  transform: translate(-50%);
+  font-size: 1.4em;
+  
+}
+
+.footer div {
+  padding: 10px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.footer div:hover{
+    color: black;
+}
+.footer div img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+
+/* background effect */
+.bg-effect {
+  font-family: "Croissant One", serif;
+  position: relative;
+  z-index: 2;
+}
+.bg-effect::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255);
+  border-radius: 10px;
+  transform: scale(0);
+  transition: transform 0.75s ease;
+  z-index: -1;
+}
+.bg-effect:hover::before {
+  transform: scale(1);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}

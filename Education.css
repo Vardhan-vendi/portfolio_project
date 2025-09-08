@@ -1,0 +1,135 @@
+/* name  :"Fredericka the Great", serif */
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Fredericka+the+Great&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap");
+
+/*   "Fredericka the Great", serif*/
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Fredericka+the+Great&family=Libertinus+Keyboard&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap");
+
+
+/* font-family: "Libertinus Keyboard", system-ui;*/
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap");
+
+/*  font-family: "Merienda", cursive;
+  */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+.Education-container {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.btn-container {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px orange;
+  transition: border-radius 0.5s ease;
+
+}
+
+.btn:hover {
+  border-radius: 20%;
+}
+.item-wrapper {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;         
+  box-sizing: border-box;
+}
+
+.item-track {
+  display: flex;            
+  transition: transform 1s ease;
+  will-change: transform;
+   height: 100%;
+}
+
+.item {
+  flex: 0 0 100%;           
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: -20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.course-name{
+  font-family: "Libertinus Keyboard", system-ui;
+  flex: 1;
+  font-size: 2.25em;
+  text-shadow: 0px 0px 10px rgb(102, 255, 0);
+}
+.institute-details{
+    flex: 2;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+ 
+}
+.institute-pic{
+  flex: 2;
+ /* padding-left: 3em; */
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.institute-pic img{
+    border-radius: 20px;
+    width: 4em;
+    height: 100%;
+    z-index: 10;
+}
+
+.content{
+  text-align: center;
+  flex: 3;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 10px white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
+
+.institute-name{
+  flex: 2;
+  font-family: "Fredericka the Great", serif;
+  font-size: 1.3em;
+  color: rgb(0, 255, 60);
+  text-shadow: 0px 0px 2px rgb(0, 0, 0);
+  text-transform: capitalize;
+  font-size: 1.8em;
+}
+
+
+.coruse,
+.cgpa,
+.academic-year{
+    flex: 1;
+    font-family: "Fredericka the Great", serif;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgb(38, 0, 255);
+    cursor: pointer;
+    color: rgb(8, 243, 255);
+}
+
+.title{
+   font-family: "Merienda", cursive;
+   color: rgb(255, 0, 234);
+
+}
